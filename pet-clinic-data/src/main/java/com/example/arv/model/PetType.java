@@ -1,7 +1,9 @@
 package com.example.arv.model;
 
-public class PetType {
+public class PetType extends BaseEntity{
 
+	private static final long serialVersionUID = 7769054474887723562L;
+	
 	private String name;
 
 	public String getName() {

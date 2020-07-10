@@ -1,7 +1,9 @@
 package com.example.arv.model;
 
-public class Person {
+public class Person extends BaseEntity {
 
+	private static final long serialVersionUID = -875206395952808151L;
+	
 	private String firstName;
 	private String lastName;
 	
