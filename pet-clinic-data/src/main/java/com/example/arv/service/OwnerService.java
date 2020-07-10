@@ -1,14 +1,7 @@
 package com.example.arv.service;
 
-import java.util.Set;
-
 import com.example.arv.model.Owner;
 
-public interface OwnerService {
+public interface OwnerService  extends CrudService<Owner, Long>{
 
-	Owner findById(Long id);
-	
-	Owner save(Owner owner);
-	
-	Set<Owner> findAll();
 }
