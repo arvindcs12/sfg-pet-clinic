@@ -2,10 +2,13 @@ package com.example.arv.service.map;
 
 import java.util.Set;
 
-import com.example.arv.model.Vet;
-import com.example.arv.service.CrudService;
+import org.springframework.stereotype.Service;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+import com.example.arv.model.Vet;
+import com.example.arv.service.VetService;
+
+@Service
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
 	@Override
 	public Set<Vet> findAll() {

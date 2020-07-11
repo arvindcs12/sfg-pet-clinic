@@ -2,10 +2,13 @@ package com.example.arv.service.map;
 
 import java.util.Set;
 
-import com.example.arv.model.Owner;
-import com.example.arv.service.CrudService;
+import org.springframework.stereotype.Service;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+import com.example.arv.model.Owner;
+import com.example.arv.service.OwnerService;
+
+@Service
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
 	@Override
 	public Set<Owner> findAll() {
